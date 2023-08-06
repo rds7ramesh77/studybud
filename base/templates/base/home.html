@@ -5,6 +5,12 @@
 <h1>HOme TEMPLATE</h1>
 
 <div>
+    <a href="{% url 'create-room' %}">Create Room</a>
+
+</div>
+
+
+<div>
     {% for room in rooms %}
 <div>
     <span>@{{room.host.username}}</span>
