@@ -3,11 +3,14 @@
 {% block content %}
 
 <div>
-    <form method="POST" action=""></form>
+    <form method="POST" action="">
     {% csrf_token %}
     {{form.as_p}}
     
-<input type="submit" value="Create Room">
+<input type="submit" value="Submit">
+
+    </form>
 </div>
+
 
 {% endblock %}
