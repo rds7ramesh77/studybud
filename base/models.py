@@ -15,7 +15,7 @@ class Room(models.Model):
 
     name=models.CharField(max_length=200)
     description=models.TextField(null=True,blank=True)
-    #particapants
+    particapants=models.ManyToManyField(User,related_name='particapants',blank=True)
     updated=models.DateTimeField(auto_now=True)
     created=models.DateTimeField(auto_now_add=True)
 
